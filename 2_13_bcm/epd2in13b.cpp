@@ -124,6 +124,7 @@ void Epd::DisplayFrame(const unsigned char* frame_buffer_black, const unsigned c
     }
     SendCommand(DISPLAY_REFRESH);
     WaitUntilIdle();
+    
 }
 
 /**

@@ -70,7 +70,7 @@ void  Handler(int signo)
 {
     printf("\r\nHandler:Goto Sleep mode\r\n");
     epd.Sleep();
-
+    EpdIf::exit();
     exit(0);
 }
 
@@ -124,8 +124,7 @@ int main(void)
                 printf("FLASH ELINK OK!!!\r\n");
             }
             break;
-        }
-        
+        }  
     }
     epd.Sleep();
     return 0;
